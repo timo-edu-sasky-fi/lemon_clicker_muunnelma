@@ -13,6 +13,8 @@ function App() {
       let newstats = {...stats}
       // Kasvatetaan napautusten lukumäärää yhdellä.
       newstats.clicks = newstats.clicks + 1;
+      // Kasvataan sitruunoiden määrää kasvatusarvolla.
+      newstats.balance = newstats.balance + newstats.increase;
       // Tallennetaan päivitetty stats-muuttuja.
       setStats(newstats); 
     }
@@ -20,7 +22,9 @@ function App() {
     
     return (
       <AppRouter stats={stats} handleClick={handleClick} />
+      
     )
         }
 
 export default App
+
