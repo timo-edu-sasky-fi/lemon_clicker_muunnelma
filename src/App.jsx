@@ -1,7 +1,6 @@
 import './App.css'
 import { useState } from 'react';
-import Menu from './components/Menu';
-import Clicker from './pages/Clicker';
+import AppRouter from './components/AppRouter';
 
 
 function App() {
@@ -20,13 +19,8 @@ function App() {
   
     
     return (
-      <div className="root">
-        <div className="root_content">
-          <Clicker stats={stats} handleClick={handleClick} />
-        </div>
-        <Menu items={stats.itemstobuy} />
-      </div>
+      <AppRouter stats={stats} handleClick={handleClick} />
     )
-      }
+        }
 
 export default App
