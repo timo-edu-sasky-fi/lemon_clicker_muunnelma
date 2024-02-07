@@ -3,15 +3,16 @@
 /* -- Värimäärittelyt ------------------------------------------------- */
 
 :root {
-  --primary: #FFB600;
-  --secondary: #E84855;
-  --neutral-lightest: #FFFFFF;
-  --neutral-light: #F3F3F3;
-  --neutral: #EBEBEB;
-  --neutral-dark: #999999;
-  --neutral-darker: #666666;
-  --neutral-darkest: #000000;
+  --primary: #3E92CC;           /* Main primary color */
+  --secondary: #F0544F;         /* Secondary color */
+  --neutral-lightest: #FFFFFF;   /* Lightest neutral color */
+  --neutral-light: #F3F3F3;      /* Light neutral color */
+  --neutral: #EBEBEB;            /* Neutral color */
+  --neutral-dark: #666666;       /* Dark neutral color */
+  --neutral-darker: #333333;     /* Darker neutral color */
+  --neutral-darkest: #000000;    /* Darkest neutral color */
 }
+
 
 /* -- yhteiset tyylimääritykset --------------------------------------- */
 

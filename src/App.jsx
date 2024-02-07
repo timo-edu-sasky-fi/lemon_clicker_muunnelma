@@ -5,9 +5,11 @@ import items from './config/items.js';
 import round from './utils/round';
 import getPurchasableItems from './utils/getPurchasableItems';
 import useLocalStorage from './utils/useLocalStorage';
-
+import clickSound from './assets/pop.mp3'
 
 function App() {
+
+    const audio = new Audio(clickSound);
 
     // Luodaan taltio, johon tallennetaan tuotelista.
     const [storeitems,setStoreitems, resetStoreitems] = useLocalStorage('lemon-items',items);
@@ -35,6 +37,7 @@ function App() {
     }
 
     const handleClick = () => {
+      audio.play();
       // Tehdään kopio stats-tilamuuttujasta.
       let newstats = {...stats}
       // Kasvatetaan napautusten lukumäärää yhdellä.
