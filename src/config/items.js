@@ -1,5 +1,14 @@
 export default [
     { 
+      id: "cat",
+      name: "Cat Accelerator",
+      qty: 0,
+      baseprice: 5,
+      price: 5,
+      multiplier: 0.1,
+      image: "cat.svg"
+    },
+    { 
       id: "lemontree",
       name: "Lemon tree",
       qty: 0,
