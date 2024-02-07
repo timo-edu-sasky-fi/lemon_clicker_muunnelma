@@ -2,7 +2,6 @@ import Header from '../components/Header';
 import Stat from '../components/Stat';
 import Reset from '../components/Reset';
 
-
 function Settings(props) {
   return (
     <div className="container">   
@@ -16,6 +15,7 @@ function Settings(props) {
             <Stat title="collected" value={props.stats.collected} />
             <Stat title="clicks" value={props.stats.clicks} />
             <Stat title="upgrades" value={props.stats.upgrades} />
+            <Stat title="lemons/click" value={Math.round((props.stats.collected / props.stats.clicks) * 10) / 10} />
           </div>
         </div>
         <Reset resetvalue={props.stats.clicks}
